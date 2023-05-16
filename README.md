@@ -65,13 +65,19 @@ Note: you could turn off your internet connection, and the script inference woul
 
 Type `exit` to finish the script.
 
-## UI support added to this forked version
+## UI support added to this updated version
 In order to run UI to work with the local LLM instance running, do the following
 
 ```shell
 > python3 UI_chat.py
 ```
-Note: Update the location of the models if they are in a different directory.
+Note: 
+1) Update the location of the models if they are in a different directory. 
+2) This one uses gradio and the formatting is not cleared. Pls. use the below updated pyQT version if you want to see UI with clear formatting. Thanks to https://github.com/msrivas-7 for adding QT support.
+
+```shell
+> python3 gui.py
+````
 
 # How does it work?
 Selecting the right local models and the power of `LangChain` you can run the entire pipeline locally, without any data leaving your environment, and with reasonable performance.
