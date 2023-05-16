@@ -65,6 +65,14 @@ Note: you could turn off your internet connection, and the script inference woul
 
 Type `exit` to finish the script.
 
+## UI support added to this forked version
+In order to run UI to work with the local LLM instance running, do the following
+
+```shell
+> python3 UI_chat.py
+```
+Note: Update the location of the models if they are in a different directory.
+
 # How does it work?
 Selecting the right local models and the power of `LangChain` you can run the entire pipeline locally, without any data leaving your environment, and with reasonable performance.
 
