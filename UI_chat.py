@@ -101,10 +101,10 @@ def main(args):
                 with gr.Accordion("Prompt", open=True):
                     system_content = gr.Textbox(value="You are privateGPT which built with LangChain and GPT4All and LlamaCpp.", show_label=False)
                 with gr.Accordion("Config", open=True):
-                    llama_embeddings_model = gr.Textbox(value="../GPT4All/models/ggml-model-q4_0.bin", label="llama_embeddings_model")
+                    llama_embeddings_model = gr.Textbox(value="models/ggml-model-q4_0.bin", label="llama_embeddings_model")
                     persist_directory = gr.Textbox(value="db", label="persist_directory")
                     model_type = gr.Textbox(value="GPT4All", label="model_type")
-                    model_path = gr.Textbox(value="../GPT4All/models/ggml-gpt4all-j-v1.3-groovy.bin", label="model_path")
+                    model_path = gr.Textbox(value="models/ggml-gpt4all-j-v1.3-groovy.bin", label="model_path")
                     model_n_ctx = gr.Slider(
                         minimum=32,
                         maximum=4096,
